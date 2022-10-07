@@ -1,0 +1,66 @@
+
+<!-- CSC309 Tutorials, Week 1: HTML, Author: eh.etesami@gmail.com -->
+
+<!-- This section is similar to section 1. YOu just need to order the HTML tags below to represent a valid HTML page. -->
+<!-- NOTE: Don't worry about the style. You will work on the style of the page next week! -->
+
+<!-- TODO: Order the HTML tags -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+    <title>ABC Cabinets</title>
+</head>
+<body>
+    <nav>
+        <h3>Navigation</h3>
+        <a href='main.html' class="btn btn-primary">Main Page</a>
+        <a href='order.html' class="btn btn-primary">Order Page</a>
+    </nav>
+    <header>
+        <h1>ABC Cabinet</h1>
+    </header>
+    <div id='content'>
+        <h3>Order Form</h3>
+        <form>
+            <label for="name">Name: </label><br/>
+            <input type='text' id='name' name='name' placeholder="Enter name"><br/><br/>
+            
+            <a>Address: </a><br>
+            <textarea id="address" name="address" rows="5" cols="33"></textarea><br/>
+            
+            <a>Method of payment: </a><br/>
+            <input type='radio' id='paymentA' name='paymentA' value='Amex'>
+            <label for="paymentA">Amex</label><br/>
+            <input type='radio' id='paymentV' name='paymentV' value='Visa'>
+            <label for="paymentV">Visa</label><br/>
+            <input type='radio' id='paymentMC' name='paymentMC' value='MasterCard'>
+            <label for="paymentMC">MasterCard</label><br/>
+            
+            <a>Credit Card #: </a> <input type='text' id='creditCard' name='creditCard'><br/>
+            
+            <a>Items: </a><br/>
+            <input type="checkbox" id="single" name="single" value="single">
+            <label for="single">Single Cabinet $30.00</label><br/>
+            <input type="checkbox" id="drawer" name="drawer" value="drawer">
+            <label for="drawer">Drawer $20.00</label><br/>
+            <input type="checkbox" id="double" name="double" value="double">
+            <label for="double">Double Cabinet $50.00</label><br/>
+            
+            <a>Colour: </a>
+            <select>
+                <option value="black">Black</option>
+                <option value="blue">Blue</option>
+                <option value="green">Green</option>
+                <option value="red">Red</option>
+                <option value="white">White</option>
+            </select><br/>
+
+            <input type="reset" />
+            <input type="submit" />
+
+        </form>
+    </div>
+    <footer></footer>
+</body>
+</html>

@@ -10,8 +10,8 @@
       file is the Bootstrap CSS file which we import it from this address: 
       https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css. 
       Use the same HTML tag but link to this address instead. -->
-    <link>
-    <link>
+    <link rel="stylesheet", href="style.css">
+    <link rel="stylesheet", href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css">
     
   </head>
 
@@ -25,8 +25,8 @@
         rules from the bootstrap CSS file. Find the appropriate class name for that can be used to change the 
         style of links below according to the screenshots. 
         Look at here: https://getbootstrap.com/docs/4.0/components/buttons/ -->
-        <a href='main.html' class="">Main Page</a>
-        <a href='order.html' class="">Order Page</a>
+        <a href='main.html' class="btn btn-primary">Main Page</a>
+        <a href='order.html' class="btn btn-primary">Order Page</a>
       </nav>
     </header>
 
@@ -37,14 +37,14 @@
       <form>
         <!-- TODO: We have grouped the related fields and labels together inside <div> tags. Now, for each <div> 
           tag add the class "form-group". The style should be applied from the boootstrap CSS file you have already linked. -->
-        <div>
+        <div class="form-group">
           <label for="name">Name: </label><br/>
           <input type='text' id='name' name='name' placeholder="Enter name"><br/><br/>
           <a>Address: </a><br>
           <textarea id="address" name="address" rows="5" cols="33"></textarea>
         </div>
 
-        <div>
+        <div class="form-group">
           <a>Method of payment: </a><br/>
           <input type='radio' id='paymentA' name='paymentA' value='Amex'>
           <label for="paymentA">Amex</label><br/>
@@ -55,7 +55,7 @@
           <a>Credit Card #: </a> <input type='text' id='creditCard' name='creditCard'><br/>
         </div>
         
-        <div>
+        <div class="form-group">
           <a>Items: </a><br/>
           <input type="checkbox" id="single" name="single" value="single">
           <label for="single">Single Cabinet $30.00</label><br/>
@@ -65,7 +65,7 @@
           <label for="double">Double Cabinet $50.00</label><br/>
         </div>
         
-        <div>
+        <div class="form-group">
           <a>Colour: </a>
           <select>
             <option value="black">Black</option>
@@ -76,7 +76,7 @@
           </select>
         </div>
 
-        <div>
+        <div class="form-group">
           <input type="reset" />
           <input type="submit" />
         </div>

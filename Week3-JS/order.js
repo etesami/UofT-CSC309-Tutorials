@@ -3,11 +3,11 @@
     the order.html page and we want to show the total costs of the items a user selects. 
     Select the <div> block with "info-msg" class:
 */
-let info_box = 
+let info_box = document.getElementsByClassName("info-msg")
 
 /* TODO: Select all <input> elements withing the <div> block that has the class "item-selection"
 */
-const item_checkboxes = 
+const item_checkboxes = info_box.getElementsByClassName("item-selection")
 
 /* TODO: We want to show a message like: "hey USER! The total cost is: $80." in the 
     info_box element when a user selects some items. You need to calculate the total
@@ -17,7 +17,7 @@ const item_checkboxes =
 */
 let total_price = 0
 // You need to iterate through all checkboxes
-for ( ){
+for (let this_checkbox of item_checkboxes){
   /* Define an event listener for each checkbox (when a user selects an item or 
     deselects it, the message should be updated with the new total cost). Steps:
       1. Define the event listener for each checkbox

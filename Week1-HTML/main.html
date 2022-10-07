@@ -1,0 +1,87 @@
+
+<!-- CSC309 Tutorials, Week 1: HTML, Author: eh.etesami@gmail.com -->
+
+<!-- An HTML document (or webpage, which means the same thing) requires 
+  a specific structure to be valid. Try to use the HTML tags below in 
+  the correct order to represent a valid empty HTML page. -->
+
+<!-- NOTE: Don't worry about the style. You will work on the style of the page next week! -->
+
+<!-- TODO: Order the HTML tags -->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+    <title>ABC Cabinets</title>
+  </head>
+
+  <body>
+    <header>
+      <h1>ABC Cabinet</h1>
+    </header>
+
+    <nav>
+      <h3>Navigation</h3>
+      <a href='main.html' class="btn btn-primary">Main Page</a>
+      <a href='order.html' class="btn btn-primary">Order Page</a>
+    </nav>
+
+    <div id='content'>
+
+      <table class="item-tables">
+        <p>We sell the following products:</p>
+        <tr>
+          <th>Item</th>
+          <th>Year</th>
+          <th>Price</th>
+        </tr>
+        <tr>
+          <td>Double Cabinet</td>
+          <td>2008</td>
+          <td>$150.00</td>
+        </tr>
+        <tr>
+          <td>Single Cabinet</td>
+          <td>2009</td>
+          <td>$100.00</td>
+        </tr>
+        <tr>
+          <td>Drawer</td>
+          <td>2009</td>
+          <td>$90.00</td>
+        </tr>
+      </table>
+
+      <div class="item-description">
+
+        <div>
+          <img alt="Double Cabinet" src="../images/double.gif">
+          <ul>
+            <li>Double Cabinet</li>
+            <li> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras dapibus, risus quis tempus ultrices, risus metus luctus metus, eget euismod nunc felis at arcu. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Praesent malesuada ex et laoreet consectetur. Pellentesque sit amet arcu porta, aliquet justo vitae.</li>
+          </ul>        
+        </div>
+
+        <div>
+          <img alt="Single Cabinet" src="../images/single.gif">
+          <ul>
+            <li>Double Cabinet</li>
+            <li>In nec maximus lacus. Aenean eget magna sit amet massa pellentesque rhoncus eget in lectus. Nullam lobortis orci eu accumsan blandit. Sed efficitur interdum leo, vel cursus risus pellentesque at.</li>
+          </ul>
+        </div>      
+        
+        <div>
+          <img alt="Drawer" src="../images/drawer.gif">
+          <ul>
+            <li>Double Cabinet</li>
+            <li>Nunc faucibus efficitur augue id luctus. Donec blandit sed nisl eu volutpat. Maecenas luctus, sapien sit amet aliquet pellentesque, velit arcu consectetur lorem, ut volutpat tellus neque sit amet neque. Proin tincidunt varius malesuada. Morbi molestie a metus vel malesuada.</li>
+          </ul>  
+        </div>
+      </div>
+    </div>
+    <footer>
+      <p>©Copyright 2022. All rights reversed.
+      <br/>CSC309, University of Toronto</p>
+    </footer>
+  </body>
+</html>
